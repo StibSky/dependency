@@ -9,6 +9,8 @@ use Monolog\Logger;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\LoggerRepository")
  */
+
+//class to make monolog file
 class FileLogger
 {
 

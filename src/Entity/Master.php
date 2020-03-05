@@ -19,13 +19,11 @@ class Master
      * @ORM\Column(type="integer")
      */
     private $id;
-
+//transformation with transform parameter
     /**
      * Master constructor.
      * @param transform $transformation
      */
-
-
     public function __construct(transform $transformation)
     {
         $this->transformation = $transformation;

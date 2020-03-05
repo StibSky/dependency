@@ -8,6 +8,8 @@ use App\Entity\transform;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CapitalizeRepository")
  */
+
+//class to capitalize
 class Capitalize implements transform
 {
     /**
