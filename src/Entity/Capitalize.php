@@ -4,10 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
-interface transform {
-    public function stringMagic(string $input);
-}
-
+use App\Entity\transform;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CapitalizeRepository")
  */

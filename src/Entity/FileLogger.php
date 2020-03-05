@@ -5,16 +5,14 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 use Monolog\Logger;
-use Monolog\Handler\StreamHandler;
 
-
-$logger = new Logger('my_logger');
-$logger->pushHandler(new StreamHandler(__DIR__ . '/logs/info.log', Logger::DEBUG));
 /**
  * @ORM\Entity(repositoryClass="App\Repository\LoggerRepository")
  */
 class FileLogger
 {
+
+    private $logger;
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -26,4 +24,13 @@ class FileLogger
     {
         return $this->id;
     }
+
+    function __construct()
+    {
+        $this->logger = new Logger("test");
+    }
+
+
+
+
 }

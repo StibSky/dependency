@@ -3,10 +3,11 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use App\Entity\transform;
 
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\RemoveSpacesRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\DashSpacesRepository")
  */
 class DashSpaces implements transform
 {
