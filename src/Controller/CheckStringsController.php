@@ -10,7 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CheckStringsController extends AbstractController
 {
     /**
-     * @Route("/check/strings", name="check_strings")
+     * @Route("/strings", name="check_strings")
      */
     public function index()
     {

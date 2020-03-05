@@ -3,10 +3,10 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use transform;
+
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\DashSpacesRepository")
+ * @ORM\Entity(repositoryClass="App\Repository\RemoveSpacesRepository")
  */
 class DashSpaces implements transform
 {
@@ -24,7 +24,7 @@ class DashSpaces implements transform
 
     public function stringMagic(String $input)
     {
-       $input = str_replace(' ', '-',($input));
+        $input = str_replace(' ', '-',($input));
 
         return $input;
     }
